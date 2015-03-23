@@ -1,0 +1,53 @@
+//- подключаем шаблон
+extends ./layouts/layout.jade
+
+
+//- Тайтл
+block title
+	title Результаты поиска
+
+
+//- Описывам контен
+block content
+	.white-block
+		h1 Результаты поиска
+	.white-block.search-block
+		.input-wrap.search
+			form(action="")
+				input(type="submit").search-submit
+				input(type='text', placeholder='Поиск').search-search
+				input(type="reset").search-reset
+			p.light_gray 15 результатов
+	.textable-item
+		.white-block
+			a(href="#").textable-item-title
+				h3
+					b ESTEL 
+					| Haute Couture Eau de Parfum 2014
+			p.textable-item-text 
+				|Теоретический раздел, 
+				b ESTEL 
+				| в котором при- водится общая информация о стро- ении и структуре Estel  принципах окрашивания волос 
+			p.textable-item-section 
+				span Раздел:
+				a(href="#") Новости
+		
+	.textable-item
+		.white-block
+			a(href="#").textable-item-title
+				h3
+					b ESTEL 
+					| Haute Couture Eau de Parfum 2014
+			p.textable-item-text 
+				|Теоретический раздел, 
+				b ESTEL 
+				| в котором при- водится общая информация о стро- ении и структуре Estel  принципах окрашивания волос 
+			p.textable-item-section 
+				span Раздел:
+				a(href="#") Новости
+
+	//- показать еще
+	.white-block
+		.show-more-wrap
+			a(href="#").btn-white Показать еще
+

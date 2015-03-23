@@ -1,0 +1,104 @@
+//- подключаем шаблон
+extends ./layouts/layout.jade
+
+
+//- Тайтл
+block title
+	title Георгафия магазинов
+
+
+//- Описывам контен
+block content
+	.map-filte
+		.white-block
+			h1 Георгафия магазинов
+		.map-block
+			.toggle-hider
+				a.toggle-hider-header(href="#",data-text-hide="Скрыть фильтры", data-text-show="Показать фильтры")
+				.toggle-hider-content
+					.white-block
+						//- селект
+						.select-wrap#geo-dropdown-field.geo-dropdown 
+							select(data-placeholder="Область")
+								option(value="") Область
+								option(value="0" , data-field="0", data-lat="59.7457479", data-lng="92.0796783", data-zoom="3") Вся карта
+								option(value="1",  data-field="1", data-lat="55.7592698", data-lng="37.6104811", data-zoom="8") Московская область
+								option(value="2",  data-field="2", data-lat="59.8930439", data-lng="30.4179456", data-zoom="8") Ленинградская область
+						//- селект
+						.select-wrap#geo-dropdown-city.geo-dropdown 
+							select(data-placeholder="Населенный пункт")
+								option(value="" )  Населенный пункт
+								option(value="0", data-field="0", data-zoom="8") Все населенные пункты
+								option(value="1", data-field="1", data-lat="55.7592698", data-lng="37.6104811", data-zoom="12") Москва
+								option(value="2", data-field="1", data-lat="55.9132292", data-lng="37.8779689", data-zoom="12") Королёв
+								option(value="3", data-field="1", data-lat="55.8247489", data-lng="37.3078212", data-zoom="12") Красногорск
+								option(value="4", data-field="2", data-lat="59.9174455", data-lng="30.3250575", data-zoom="10") Санкт-Петербург
+								option(value="5", data-field="2", data-lat="60.3659085", data-lng="28.6291059", data-zoom="14") Приморск
+								option(value="6", data-field="2", data-lat="59.9365044", data-lng="31.0357221", data-zoom="14") Шлиссельбург
+						a(href="").btn-blue Применить
+	#map.geo-map.full(data-x="55.7592698", data-y="37.6104811", data-zoom="10", data-diff="150")
+	
+	script
+		|var data = {
+		|	  "places":
+		|	  [
+		|	    {
+		|	      "latitude": 55.7592698,
+		|	      "longitude": 37.6104811,
+		|	      "title":"Estel",
+		|	      "address":"Ул. Ленина, д. 25, кв.27, Иркутск, 664003",
+		|	      "phone":"+7 (468) 22-63-12"
+		|	    },
+		|	    {
+		|	      "latitude": 55.7592698,
+		|	      "longitude": 37.6109911,
+		|	      "title":"Estel",
+		|	      "address":"Ул. Ленина, д. 25, кв.27, Иркутск, 664003",
+		|	      "phone":"+7 (468) 22-63-12"
+		|	    },
+		|	    {
+		|	      "latitude": 55.7592698,
+		|	      "longitude": 38.3109911,
+		|	      "title":"Estel",
+		|	      "address":"Ул. Ленина, д. 25, кв.27, Иркутск, 664003 ",
+		|	      "phone":"+7 (468) 22-63-12"
+		|	    },
+		|	    {
+		|	      "latitude": 55.9132292,
+		|	      "longitude": 37.8779689,
+		|	      "title":"Estel",
+		|	      "address":"Ул. Ленина, д. 25, кв.27, Иркутск, 664003 ",
+		|	      "phone":"+7 (468) 22-63-12"
+		|	    },
+		|	    {
+		|	      "latitude": 55.8247489,
+		|	      "longitude": 37.3078212,
+		|	      "title":"Estel",
+		|	      "address":"Ул. Ленина, д. 25, кв.27, Иркутск, 664003",
+		|	      "phone":"+7 (468) 22-63-12"
+		|	    },
+		|	    {
+		|	      "latitude": 59.9174455,
+		|	      "longitude": 30.3250575,
+		|	      "title":"Estel",
+		|	      "address":"Ул. Ленина, д. 25, кв.27, Иркутск, 664003",
+		|	      "phone":"+7 (468) 22-63-12"
+		|	    },
+		|	    {
+		|	      "latitude": 60.3659085,
+		|	      "longitude": 28.6291059,
+		|	      "title":"Estel",
+		|	      "address":"Ул. Ленина, д. 25, кв.27, Иркутск, 664003",
+		|	      "phone":"+7 (468) 22-63-12"
+		|	    },
+		|	    {
+		|	      "latitude": 59.9365044,
+		|	      "longitude": 31.0357221,
+		|	      "title":"Estel",
+		|	      "address":"Ул. Ленина, д. 25, кв.27, Иркутск, 664003",
+		|	      "phone":"+7 (468) 22-63-12"
+		|	    }
+		|	  ]
+		|	}
+
+

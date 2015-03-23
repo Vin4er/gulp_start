@@ -1,0 +1,52 @@
+//- подключаем шаблон
+extends ./layouts/layout.jade
+
+
+//- Тайтл
+block title
+	title Контакты
+
+
+//- Описывам контен
+block content
+	.white-block
+		h1 Контакты
+	.contacts-block
+		.white-block
+			.contacts-block-title
+				h5
+					i.icon-home
+					span Адрес
+			.contacts-block-text
+				p
+					|Пискаревский проспект, д.63, к. 6, 
+					br
+					|лит. А, г. Санкт-Петербург, Россия,  
+					br
+					|195273
+			.contacts-block-title
+				h5
+					i.icon-phone
+					span Телефон
+			.contacts-block-text
+				p
+					a(href="tel:+7 (812) 299-00-56") +7 (812) 299-00-56
+	.toggle-hider
+		a.toggle-hider-header(href="#", data-text-hide="Свернуть форму", data-text-show="Напишите нам")
+		.toggle-hider-content
+			.white-block
+				form(action="")
+					//- инпуты
+					.input-wrap
+						input(type='text', required='required', placeholder='Имя')
+						span.error Ошибка ввода
+
+					//- инпуты
+					.input-wrap
+						input(type='email',  required='required', placeholder='Email')
+						span.error Ошибка ввода
+
+					.input-wrap
+							textarea(required='required', placeholder='Текст сообщения')
+							span.error Ошибка ввода	
+					input.btn-blue(type="submit", value="Отправить")

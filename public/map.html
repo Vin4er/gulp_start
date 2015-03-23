@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=320, initial-scale=1.0,  maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+		<title>Георгафия магазинов</title>
+		<link href="assets/css/css.css" rel="stylesheet" type="text/css"/>
+		<link href="assets/js/swiper-slider/dist/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+		<link href="http://fonts.googleapis.com/css?family=Yeseva+One&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css"/>
+		<link href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;subset=latin,cyrillic,cyrillic-ext,latin-ext" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<nav>
+			<div class="nav">
+				<div class="nav-search">
+					<div class="input-wrap search">
+						<form action="">
+							<input type="submit" class="search-submit"/>
+							<input type="text" placeholder="Поиск" class="search-search"/>
+							<input type="reset" class="search-reset"/>
+						</form>
+					</div>
+				</div>
+				<div class="nav-list">
+					<ol>
+						<li><a href="#" class="nav-active"><span>Продукция</span></a></li>
+						<li><a href="#"><span>Подобрать цвет</span></a></li>
+						<li class="toggle-hider"><a href="#" class="toggle-hider-header"><span>Советы профессионалов</span><b class="icon-arrow-bottom"></b></a>
+							<ol class="toggle-hider-content">
+								<li><a href="#"><span>Советы по окрашиванию</span></a></li>
+								<li><a href="#"><span>Вопросы покупателей </span></a></li>
+							</ol>
+						</li>
+						<li><a href="#"><span>О компании</span></a></li>
+						<li><a href="#"><span>Новости</span></a></li>
+						<li><a href="#"><span>Контакты</span></a></li>
+					</ol>
+				</div>
+			</div>
+		</nav><a href="#" class="backdrop-nav"></a>
+		<div class="body">
+			<header>
+				<div class="header">
+					<div class="header-item-menu"><a href="#" class="header-menu-open"><i class="icon-menu"></i></a></div>
+					<div class="header-item-logo">
+						<div class="social-block white fr"><a href="#"><i class="icon-vk-white"></i></a><a href="#"><i class="icon-fb-white"></i></a></div><a href="index.html" class="header-item-logo__action"><img src="assets/img/logo.png" alt="estel saint-petersburg"/></a>
+					</div>
+				</div>
+			</header>
+			<section>
+				<div class="map-filte">
+					<div class="white-block">
+						<h1>Георгафия магазинов</h1>
+					</div>
+					<div class="map-block">
+						<div class="toggle-hider"><a href="#" data-text-hide="Скрыть фильтры" data-text-show="Показать фильтры" class="toggle-hider-header"></a>
+							<div class="toggle-hider-content">
+								<div class="white-block">
+									<div id="geo-dropdown-field" class="select-wrap geo-dropdown"> 
+										<select data-placeholder="Область">
+											<option value="">Область</option>
+											<option value="0" data-field="0" data-lat="59.7457479" data-lng="92.0796783" data-zoom="3">Вся карта</option>
+											<option value="1" data-field="1" data-lat="55.7592698" data-lng="37.6104811" data-zoom="8">Московская область</option>
+											<option value="2" data-field="2" data-lat="59.8930439" data-lng="30.4179456" data-zoom="8">Ленинградская область</option>
+										</select>
+									</div>
+									<div id="geo-dropdown-city" class="select-wrap geo-dropdown"> 
+										<select data-placeholder="Населенный пункт">
+											<option value=""> Населенный пункт</option>
+											<option value="0" data-field="0" data-zoom="8">Все населенные пункты</option>
+											<option value="1" data-field="1" data-lat="55.7592698" data-lng="37.6104811" data-zoom="12">Москва</option>
+											<option value="2" data-field="1" data-lat="55.9132292" data-lng="37.8779689" data-zoom="12">Королёв</option>
+											<option value="3" data-field="1" data-lat="55.8247489" data-lng="37.3078212" data-zoom="12">Красногорск</option>
+											<option value="4" data-field="2" data-lat="59.9174455" data-lng="30.3250575" data-zoom="10">Санкт-Петербург</option>
+											<option value="5" data-field="2" data-lat="60.3659085" data-lng="28.6291059" data-zoom="14">Приморск</option>
+											<option value="6" data-field="2" data-lat="59.9365044" data-lng="31.0357221" data-zoom="14">Шлиссельбург</option>
+										</select>
+									</div><a href="" class="btn-blue">Применить</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="map" data-x="55.7592698" data-y="37.6104811" data-zoom="10" data-diff="150" class="geo-map full"></div>
+				<script>
+					var data = {
+						  "places":
+						  [
+						    {
+						      "latitude": 55.7592698,
+						      "longitude": 37.6104811,
+						      "title":"Estel",
+						      "address":"Ул. Ленина, д. 25, кв.27, Иркутск, 664003",
+						      "phone":"+7 (468) 22-63-12"
+						    },
+						    {
+						      "latitude": 55.7592698,
+						      "longitude": 37.6109911,
+						      "title":"Estel",
+						      "address":"Ул. Ленина, д. 25, кв.27, Иркутск, 664003",
+						      "phone":"+7 (468) 22-63-12"
+						    },
+						    {
+						      "latitude": 55.7592698,
+						      "longitude": 38.3109911,
+						      "title":"Estel",
+						      "address":"Ул. Ленина, д. 25, кв.27, Иркутск, 664003 ",
+						      "phone":"+7 (468) 22-63-12"
+						    },
+						    {
+						      "latitude": 55.9132292,
+						      "longitude": 37.8779689,
+						      "title":"Estel",
+						      "address":"Ул. Ленина, д. 25, кв.27, Иркутск, 664003 ",
+						      "phone":"+7 (468) 22-63-12"
+						    },
+						    {
+						      "latitude": 55.8247489,
+						      "longitude": 37.3078212,
+						      "title":"Estel",
+						      "address":"Ул. Ленина, д. 25, кв.27, Иркутск, 664003",
+						      "phone":"+7 (468) 22-63-12"
+						    },
+						    {
+						      "latitude": 59.9174455,
+						      "longitude": 30.3250575,
+						      "title":"Estel",
+						      "address":"Ул. Ленина, д. 25, кв.27, Иркутск, 664003",
+						      "phone":"+7 (468) 22-63-12"
+						    },
+						    {
+						      "latitude": 60.3659085,
+						      "longitude": 28.6291059,
+						      "title":"Estel",
+						      "address":"Ул. Ленина, д. 25, кв.27, Иркутск, 664003",
+						      "phone":"+7 (468) 22-63-12"
+						    },
+						    {
+						      "latitude": 59.9365044,
+						      "longitude": 31.0357221,
+						      "title":"Estel",
+						      "address":"Ул. Ленина, д. 25, кв.27, Иркутск, 664003",
+						      "phone":"+7 (468) 22-63-12"
+						    }
+						  ]
+						}
+				</script>
+			</section>
+			<footer>
+				<div class="footer"><a href="#" class="desktop-site white">Перейти на полную версию</a>
+					<div class="copyright">© «Юникосметик», 2012–2015. </div><a href="#" target="_blank" class="white">www.estel.pro</a>
+				</div>
+			</footer>
+		</div>
+	</body>
+	<script src="assets/js/jquery-1.10.2.js"></script>
+	<script src="assets/js/swiper-slider/dist/js/swiper.min.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script src="/assets/js/markerclusterer.js"></script>
+	<script src="assets/js/js.js"></script>
+	<script src="/assets/js/map_js.js"></script>
+</html>

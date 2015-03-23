@@ -1,0 +1,61 @@
+//- подключаем шаблон
+extends ./layouts/layout.jade
+
+
+//- Тайтл
+block title
+	title Найди свой цвет
+
+
+//- Описывам контен
+block content
+	.white-block
+		h1 Найди свой цвет
+		//- Слайдер
+	.konstruktor
+		.white-block
+			.title-numeric(data-numer="1") 
+				span Выберете ваш натуральный цвет волос
+		.white-block
+			.colorize-head-wrap.long
+				label.colorize-head
+					input(type="radio", name="colorize")
+					ins(style="background-image: url(assets/img/colorize-head.png);")
+					span Светло-русый	
+				label.colorize-head
+					input(type="radio", name="colorize")
+					ins(style="background-image: url(assets/img/colorize-head.png);")
+					span Русый	
+				label.colorize-head
+					input(type="radio", name="colorize")
+					ins(style="background-image: url(assets/img/colorize-head.png);")
+					span Тёмно-русый	
+				label.colorize-head
+					input(type="radio", name="colorize")
+					ins(style="background-image: url(assets/img/colorize-head.png);")
+					span Блонд	
+				label.colorize-head
+					input(type="radio", name="colorize", checked="checked")
+					ins(style="background-image: url(assets/img/colorize-head.png);")
+					span Шатен	
+				label.colorize-head
+					input(type="radio", name="colorize")
+					ins(style="background-image: url(assets/img/colorize-head.png);")
+					span Чёрный	
+				label.colorize-head
+					input(type="radio", name="colorize")
+					ins(style="background-image: url(assets/img/colorize-head.png);")
+					span Рыжий	
+				label.colorize-head
+					input(type="radio", name="colorize")
+					ins(style="background-image: url(assets/img/colorize-head.png);")
+					span Тёмный шатен	
+		.white-block
+			.page-paginator
+				a(href="#").fl
+					i.icon-arrow-left
+					span назад
+				span.page-paginator__numer 2/8
+				a(href="#").fr
+					span далее
+					i.icon-arrow-right

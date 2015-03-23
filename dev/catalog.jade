@@ -1,0 +1,119 @@
+//- подключаем шаблон
+extends ./layouts/layout.jade
+
+
+//- Тайтл
+block title
+	title Главная
+
+
+//- Описывам контен
+block content
+	.white-block
+		h1 Продукция
+
+	.toggle-hider
+		a.toggle-hider-header(href="#",data-text-hide="Скрыть фильтры", data-text-show="Показать фильтры")
+		.toggle-hider-content
+			.white-block
+				.select-wrap
+					select(multiple="multiple", data-placeholder="Тип продукции")
+						option(value="0") item1
+						option(value="1") item2
+						option(value="2") item3
+						option(value="3") item4
+
+				.select-wrap
+					select(multiple="multiple", data-placeholder="Вид краски")
+						option(value="0") item1
+						option(value="1", selected="selected") item2
+						option(value="2") item3
+						option(value="3") item4
+
+
+				.select-wrap
+					select(data-placeholder="Наличие аммиака")
+						option(value="") Наличие аммиака
+						option(value="0") item1
+						option(value="1") item2
+						option(value="2") item3
+						option(value="3") item4
+
+
+				.select-wrap
+					select(multiple="multiple", data-placeholder="Назначение")
+						option(value="0") item1
+						option(value="1") item2
+						option(value="2") item3
+						option(value="3") item4
+
+				.select-wrap
+					select(multiple="multiple", data-placeholder="Навание линейки")
+						option(value="0") item1
+						option(value="1") item2
+						option(value="2") item3
+						option(value="3") item4
+
+				.reset-wrap
+					a(href="#").reset Сбросить
+
+				a.btn-blue(href="#") Найти
+	.products-block.white-block
+		a(href="#").product-item
+				.product-item-img
+					img(src="assets/img/estel-product__tmp.png", alt="")
+				.product-item-text
+					.product-item-text__description Краска для бровей и ресниц
+					.product-item-text__title ESTEL ONLY LOOKS
+
+		a(href="#").product-item
+				.product-item-img
+					img(src="assets/img/estel-product__tmp.png", alt="")
+				.product-item-text
+					.product-item-text__description Краска для бровей и ресниц
+					.product-item-text__title ESTEL ONLY LEL ONLY LEL ONLY LOOKS
+
+		a(href="#").product-item
+				.product-item-img
+					img(src="assets/img/estel-product__tmp.png", alt="")
+				.product-item-text
+					.product-item-text__description Краска для бровей и ресниц
+					.product-item-text__title ESTEL ONLY LOOKS
+
+		a(href="#").product-item
+				.product-item-img
+					img(src="assets/img/estel-product__tmp.png", alt="")
+				.product-item-text
+					.product-item-text__description Краска для бровей и ресниц
+					.product-item-text__title ESTEL ONLY LOOKS
+
+		a(href="#").product-item
+				.product-item-img
+					img(src="assets/img/estel-product__tmp.png", alt="")
+				.product-item-text
+					.product-item-text__description Краска для бровей и ресниц
+					.product-item-text__title ESTEL ONLY LOOKS
+			//- показать еще
+			.show-more-wrap
+				a(href="#").show-more Показать еще
+		a(href="#").product-item
+				.product-item-img
+					img(src="assets/img/estel-product__tmp.png", alt="")
+				.product-item-text
+					.product-item-text__description Краска для бровей и ресниц
+					.product-item-text__title ESTEL ONLY LOOKS
+
+		a(href="#").product-item
+				.product-item-img
+					img(src="assets/img/estel-product__tmp.png", alt="")
+				.product-item-text
+					.product-item-text__description Краска для бровей и ресниц
+					.product-item-text__title ESTEL ONLY LOOKS
+		//- показать еще
+		.show-more-wrap
+			a(href="#").btn-white Показать еще
+
+				
+	
+
+

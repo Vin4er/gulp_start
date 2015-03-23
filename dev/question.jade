@@ -1,0 +1,72 @@
+//- подключаем шаблон
+extends ./layouts/layout.jade
+
+
+//- Тайтл
+block title
+	title Вопросы Покупателей
+
+
+//- Описывам контен
+block content
+	.white-block
+		h1 Вопросы Покупателей
+	.toggle-hider
+		a.toggle-hider-header(href="#", data-text-hide="Свернуть форму", data-text-show="Напишите нам")
+		.toggle-hider-content
+			.white-block
+				form(action="")
+					//- инпуты
+					.input-wrap
+						input(type='text', required='required', placeholder='Имя')
+						span.error Ошибка ввода
+
+					//- инпуты
+					.input-wrap
+						input(type='email',  required='required', placeholder='Email')
+						span.error Ошибка ввода
+
+					.input-wrap
+							textarea(required='required', placeholder='Текст сообщения')
+							span.error Ошибка ввода	
+					input.btn-blue(type="submit", value="Отправить")
+	.textable-item
+		.white-block
+			a(href="#").textable-item-title
+				h3 Мои волосы окрашены хной.  Могу ли пользоваться красками  ESTEL?
+			p.textable-item-text.toggle-texted 
+				|Теоретический раздел,в котором при- водится общая информация о стро- ении и структуре Estel  принци 
+				| в котором при- водится общая информация о стро- ении и структуре Estel  принципах окрашивания волос 
+			p.textable-item-toggler
+				a(href="#", data-toggler-show="Читать полностью", data-toggler-hide="Свернуть") 
+	.textable-item
+		.white-block
+			a(href="#").textable-item-title
+				h3 Мои волосы окрашены хной.  Могу ли пользоваться красками  ESTEL?
+			p.textable-item-text.toggle-texted 
+				|Теоретический раздел, 
+			p.textable-item-toggler
+				a(href="#", data-toggler-show="Читать полностью", data-toggler-hide="Свернуть") 
+	.textable-item
+		.white-block
+			a(href="#").textable-item-title
+				h3 Мои волосы окрашены хной.  Могу ли пользоваться красками  ESTEL?
+			p.textable-item-text.toggle-texted 
+				|У меня химическая завивка. 
+				|Как мне окрасить волосы?
+				|Теоретический раздел, в котором при-
+				|водится общая информация о стро-
+				|ении и структуре Estel  принципах
+				|окрашивания волос. Теоретический 
+				|Под кутикулой находится кортекс — корковое вещество, состоящее из удлиненных мертвых клеток, которые придают волосу прочность и эласти-
+				|чность. Кортекс содержит пигмент меланин, определяющий естественный цвет волос. В центре каждого волоса есть мозговое вещество, оно состоит из мягких кератиновых клеток и воздушных полостей. Назначение этого слоя неизвестно, но предполагается, что по нему поступают питательные вещества 
+				|к кортексу и кутикуле. Этим можно объяснить быстрое изменение волос при заболевании.
+			p.textable-item-toggler
+				a(href="#", data-toggler-show="Читать полностью", data-toggler-hide="Свернуть") 
+	//- показать еще
+	.white-block
+		.show-more-wrap
+			a(href="#").btn-white Показать еще
+
+
+

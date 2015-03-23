@@ -1,0 +1,69 @@
+//- подключаем шаблон
+extends ./layouts/layout.jade
+
+//- Тайтл
+block title
+	title Главная
+
+
+//- Описывам контен
+block content 
+	.accord-wrap
+		div.accrod-block
+			a.accrod-block-toggler(style="background-image: url(assets/img/index-bg-1.png)", href="javascript:void(0);")
+				h2 Estel Celebrity
+			.accrod-block-bg
+				.bg-w
+					h3 Estel Celebrity
+					p Ухаживающая стойкая гель-краска  для волос premium-класса
+					a.btn-mini(href="product.html") Подробнее
+		div.accrod-block
+			a.accrod-block-toggler(style="background-image: url(assets/img/index-bg-2.png)", href="javascript:void(0);")
+				h2 estel only
+			.accrod-block-bg
+				.bg-w
+					h3 estel only
+					p Ухаживающая стойкая гель-краска  для волос premium-класса
+					a.btn-mini(href="product.html") Подробнее
+		div.accrod-block
+			a.accrod-block-toggler(style="background-image: url(assets/img/index-bg-3.png)", href="javascript:void(0);")
+				h2 ESTEL LOVE
+			.accrod-block-bg
+				.bg-w
+					h3 ESTEL LOVE
+					p Ухаживающая стойкая гель-краска  для волос premium-класса
+					a.btn-mini(href="product.html") Подробнее
+		div.accrod-block
+			a.accrod-block-toggler(style="background-image: url(assets/img/index-bg-4.png)", href="javascript:void(0);")
+				h2 ESTEL SOLO
+			.accrod-block-bg
+				.bg-w
+					h3 ESTEL SOLO
+					p Ухаживающая стойкая гель-краска  для волос premium-класса
+					a.btn-mini(href="product.html") Подробнее
+	
+	.search-colorzz
+		h2.white.center найди свой цвет
+		p.white.center Быстрый способ подобрать нужное окрашивание
+		a.btn-transparent(href="#") начать
+	.white-block
+		h1 Совет профессионала
+	.white-block
+		a(href="#").proffesional-block
+			.proffesional-img.fl(style="background-image: url(assets/img/estel_brov.jpg)")
+			div.proffesional-title Дарья Стаховская
+			p.proffesional-text Топ-стилист ESTEL Proffesional
+			.clearfix
+		//- Слайдер
+		.slider-block.slider-text
+			.swiper-container
+				.swiper-wrapper
+					.swiper-slide
+						p  Теоретический раздел, в котором при-водится общая информация о строении и структуре волос, принципах окраши-вания волос различными средствами испособами, объясняется как действуютразличные средства по уходу за воло-сами, и почему они необходимы. 
+					.swiper-slide
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus id, eum. Itaque voluptates quisquam mollitia non saepe, possimus perspiciatis sequi fugit praesentium, repudiandae vero natus quidem eveniet, ducimus ad inventore.
+					.swiper-slide
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore vitae, nulla natus! Nam laboriosam, soluta beatae nisi modi! Doloribus rerum esse consequuntur sint. Asperiores numquam enim laborum natus veniam, ut?
+			.swiper-pagination &nbsp;
+
+		a.btn-white(href="#") другие советы

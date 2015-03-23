@@ -1,0 +1,81 @@
+//- подключаем шаблон
+extends ./layouts/layout.jade
+
+
+//- Тайтл
+block title
+	title ESTEL Haute couture
+
+
+//- Описывам контен
+block content
+	.white-block
+		h1 ESTEL Haute couture
+	.product-block
+		.white-block
+			p Стойкая краска для волос.  Палитра включает 30 ярких оттенков. Яркие сияющие оттенки. Система Color Reflex.
+		//- Слайдер
+		.white-block
+			.slider-block.slider-text
+				.swiper-container
+					.swiper-wrapper
+						.swiper-slide
+							img(src="assets/img/estel-product__tmp.png", alt="")
+						.swiper-slide
+							img(src="assets/img/estel-product__tmp.png", alt="")
+						.swiper-slide
+							img(src="assets/img/estel-product__tmp.png", alt="")
+				.swiper-pagination &nbsp;
+			a.btn-blue(href="#") другие советы
+
+		.toggle-hider
+			a.toggle-hider-header(href="#",data-text-hide="Скрыть преимущества", data-text-show="Преимущества")
+			.toggle-hider-content
+				.white-block
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quis voluptate explicabo deserunt necessitatibus facilis molestias alias, voluptatibus repellat. Blanditiis amet at dolores sequi eius eos tempora quam, et mollitia!
+		.toggle-hider
+			a.toggle-hider-header(href="#",data-text-hide="Скрыть результат", data-text-show="Результат")
+			.toggle-hider-content
+				.white-block
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quis voluptate explicabo deserunt necessitatibus facilis molestias alias, voluptatibus repellat. Blanditiis amet at dolores sequi eius eos tempora quam, et mollitia!
+		.toggle-hider
+			a.toggle-hider-header(href="#",data-text-hide="Скрыть советы по применению", data-text-show="Советы по применению")
+			.toggle-hider-content
+				.white-block
+					a(href="#") Скачать полную версию инструкции
+				.white-block
+					img.mw100(src="assets/img/product-1.png", alt="")
+					h4 Шаг 1: Тест на чувствительность
+					p Проведите тест на аллергическую 48 часов до окрашивания
+				.white-block
+					img.mw100(src="assets/img/product-2.png", alt="")
+					h4 Шаг 2: Тест на чувствительность, прям тест тест
+					p Проведите тест на аллергическую 48 часов до окрашивания
+				.white-block
+					img.mw100(src="assets/img/product-3.png", alt="")
+					h4 Шаг 3: Тест на чувствительность
+					p Проведите тест на аллергическую 48 часов до окрашивания
+				.white-block
+					img.mw100(src="assets/img/product-4.png", alt="")
+					h4 Шаг 4: Тест на чувствительность
+					p Проведите тест на аллергическую 48 часов до окрашивания
+				.white-block
+					img.mw100(src="assets/img/product-5.png", alt="")
+					h4 Шаг 5: Тест на чувствительность
+					p Проведите тест на аллергическую 48 часов до окрашивания
+		.white-block.no-padding
+			.social-block.blue
+				span.fl Поделиться
+				span.fr
+					a(href="#")
+						i.icon-vk-blue
+					a(href="#")
+						i.icon-fb-blue
+					a(href="#")
+						i.icon-tw-blue
+					a(href="#")
+						i.icon-odn-blue
+				.clearfix
+
+
+

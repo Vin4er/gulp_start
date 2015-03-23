@@ -1,0 +1,58 @@
+//- подключаем шаблон
+extends ./layouts/layout.jade
+
+
+//- Тайтл
+block title
+	title Найди свой цвет
+
+
+//- Описывам контен
+block content
+	.white-block
+		h1 Найди свой цвет
+		//- Слайдер
+	.konstruktor
+		.white-block
+			.title-numeric(data-numer="3") 
+				span Окрашены ли ваши волосы?
+		.white-block
+			.radio
+				label
+					input(type="radio", name="radio-name", checked="true")
+					ins
+					span Нет
+			.radio
+				label
+					input(type="radio", name="radio-name")
+					ins
+					span Нет, но есть обесвеченные пряди
+			.radio
+				label
+					input(type="radio", name="radio-name")
+					ins
+					span Да, полностью окрашены
+			.radio
+				label
+					input(type="radio", name="radio-name")
+					ins
+					span Окрашены и уже видны отросшие  к
+			.radio
+				label
+					input(type="radio", name="radio-name")
+					ins
+					span Окрашены и есть бесцветные  пряди
+			.radio
+				label
+					input(type="radio", name="radio-name")
+					ins
+					span Окрашивание было хной/бамой 
+		.white-block
+			.page-paginator
+				a(href="#").fl
+					i.icon-arrow-left
+					span назад
+				span.page-paginator__numer 4/8
+				a(href="#").fr
+					span далее
+					i.icon-arrow-right

@@ -1,0 +1,1078 @@
+.noto-sans
+	font-family: 'Noto Sans', sans-serif;
+
+.yeseva-one
+	font-family: 'Yeseva One', cursive;
+
+// main styles
+body 
+	margin 0
+	padding 0
+	font-size: 14px
+	line-height 20px
+	color #6c7276
+	overflow-x: hidden
+	@extend .noto-sans;
+	* 
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+		letter-spacing: 0px
+		margin 0
+		padding 0
+		outline: none
+	// .body
+		// overflow: auto
+a
+	text-decoration: underline
+	color: #9aa9b5
+	font-size: 14px
+	line-height 20px
+	&:hover
+		text-decoration: none
+p
+	color: #6c7276
+	font-size: 14px
+	line-height 20px
+	margin-bottom: 20px
+	b
+		font-weight bold
+		
+
+.clearfix
+	clear: both
+	float none
+	display block
+
+.perfect
+	max-width: 100%
+	position absolute
+	top 0
+	left 0
+	width 100%
+	opacity 0.3
+	z-index 3333;
+	display none
+.img-block
+	margin: 20px auto
+	display: block
+.block
+	display: block
+.dib
+	display inline-block
+.inline
+	display inline
+.white
+	color white
+	
+.center
+	text-align center
+	
+.bold
+	font-weight bold
+	
+.fr
+	float right
+	
+.fl
+	float left
+	
+.black-block, .white-block
+	background: black
+
+	padding 18px 18px 0px 18px
+	&.white-block
+		background #fff
+
+
+
+$BLUE = #0077c8
+
+
+h1, h2, h3, h4, h5, h6
+	color:  $BLUE
+	
+[data-date]
+	&:after
+		content: attr(data-date)
+		font-size: 12px
+		color: #a9b6bf
+		display: block
+		margin-bottom: -19px
+		margin-top: 8px
+		text-transform: none
+		@extend .noto-sans;
+
+h1, h2, h3
+	@extend .yeseva-one;
+	font-weight normal
+	
+img
+	max-width 60%
+table
+	width: 100%
+.uppercase
+	text-transform uppercase
+.e
+	font-size	145px;
+	@extend .yeseva-one;
+	color #e7f0f8
+	position: absolute
+	top: 45%
+	left: 0
+	width: 100%
+	text-align: center
+.relative
+	position: relative
+	z-index: 1
+h1
+	font-size 20px
+	text-transform uppercase
+	padding-bottom: 16px
+	line-height: 23px;
+	&.bigger
+		font-size: 25px
+		padding-bottom: 70px;
+		padding-top: 120px;
+h2
+	font-size 19px
+	padding-top: 25px
+	padding-bottom: 20px
+h3
+	font-size 17.5px
+	margin-bottom: 20px 
+h4
+	font-size 16px
+	font-weight: none;
+	@extend .yeseva-one;
+	padding-top: 13px
+	padding-bottom: 8px
+h5
+	font-size 14px
+	line-height: 24px
+	font-weight: bold
+	&.light_gray
+		font-weight: normal
+	&.title-block
+		margin-bottom: 10px
+		color #0077c8
+		font-weight: normal
+	&:not(.title-block)
+		text-transform: uppercase
+		margin-bottom: 7px
+		vertical-align: middle
+		span, i 
+			vertical-align: middle
+			display: inline-block
+		i
+			margin-right: 7px
+		span
+			height: 15px;
+			line-height: 16px;
+h6
+	font-size 12px
+	
+
+.animated {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+@-webkit-keyframes fadeOut {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+@keyframes fadeOut {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.fadeIn {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+
+.fadeOut {
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+}	
+
+.gray
+	color: #6c7379
+.light_gray
+	color:  #9ab0bf
+.blue
+	color:  $BLUE
+
+// blockquote
+blockquote
+	@extend h3
+	color:  $BLUE
+	padding-top: 10px
+	text-align: center
+	margin-bottom: 30px
+	&:before
+		content: '”'
+		color: #0077c8
+		font-size: 68px
+		opacity: 0.3
+		display: block
+		line-height: 60px
+		height: 39px
+		@extend .yeseva-one
+		
+
+// Проффесиионал
+.proffesional-block
+	height 110px	
+	text-decoration none;
+	display block
+	.proffesional-img
+		border-radius 50%
+		width: 90px;
+		height: 90px;
+		background-size: cover
+		background-position: center
+		background-repeat no-repeat
+		margin-right: 20px
+	.proffesional-title, .proffesional-text
+	.proffesional-title
+		font-weight: bold;
+		font-size: 16px
+		color $BLUE
+		padding-top: 6px
+		margin-bottom: 8px;
+	.proffesional-text
+		font-size: 14px;
+		font-style: italic
+		color #bdc7ce
+
+
+
+// инпуты
+.input-wrap
+	position relative
+	padding-bottom: 20px
+	&.search
+		p 
+			font-size: 14px
+			padding-top: 15px;
+			padding-bottom: 15px;
+			margin-bottom 0
+			
+		[type=text]
+			height 30px
+			color: #6c7276
+			padding-right: 30px
+			padding-left: 30px
+		.search-reset
+			background-image: url(../img/close.png)
+			background-position: center
+			background-repeat: no-repeat
+			background-color: transparent
+			background-size: 50%
+			width: 29px
+			top: 1px
+			height: 29px
+			position: absolute
+			right: 0px
+			border: 0
+			color: transparent
+			text-indent: -9999px
+			overflow: hidden
+			line-height: 4000px
+		.search-submit
+			background-image: url(../img/search.png)
+			background-position: center
+			background-repeat: no-repeat
+			background-color: transparent
+			background-size: 50%
+			width: 29px
+			height: 29px
+			position: absolute
+			left: 0px
+			border: 0
+			color: transparent
+			text-indent: -9999px
+			overflow: hidden
+			line-height: 4000px
+
+
+	textarea, input
+		width 100%
+		border: 1px solid #bdc7ce
+		padding-left 12px
+		padding-right 12px
+		font-size 16px
+		border-radius 0;
+		background: white
+		display block
+		-webkit-appearance: none;
+		@extend .noto-sans;
+		&:focus
+			color: #6c7276
+		&.seen:invalid, &.error
+			border-color: #c1253a
+			&~.error
+				display block
+		&~.error
+			display none
+			font-size: 12px
+			color #c1253a
+			position absolute
+			bottom: 1px
+	textarea
+		height: 140px	
+		padding-top 12px
+	input
+		height 40px
+		
+			
+// мультиселект
+.select-wrap
+	padding-bottom: 20px;
+	position: relative;
+	.js-select-opened
+		position: relative;
+		z-index: 901;
+		&+.js-select-drop
+			display block
+	.js-select-drop ol.none-checkbox
+		list-style-type: none
+		border: 1px solid #bdc7ce
+		border-bottom: 0
+		border-top: 0
+		padding-top: 0px
+		padding-bottom: 10px
+		padding-left: 15px
+		margin-top: 0px
+		padding-right: 15px
+		.checkbox{
+			padding-bottom: 0
+			margin-bottom 0
+		}
+		label
+			height: 40px
+			vertical-align: middle
+			line-height: 40px
+		input, ins
+			display none
+			&:checked
+				&~span
+					color #0077c8
+			&~span
+				padding-left: 0
+	.js-select-drop
+		position absolute
+		width 100%
+		background #fff
+		z-index: 901;
+		display none
+		a
+			margin-bottom: 0
+		ol
+			list-style-type: none
+			border: 1px solid #bdc7ce
+			border-bottom: 0
+			border-top: 0
+			padding-top: 20px
+			padding-left: 15px
+			margin-top: 0px
+			padding-right: 15px
+	.js-select
+		&>a
+			height 40px
+			width 100%
+			font-size 16px
+			display block
+			border: 1px solid #bdc7ce;
+			padding-left 12px
+			padding-right 12px
+			background: white;
+			position relative
+			text-decoration none
+			font-size 16px
+			line-height: 38px
+			span
+				font-size 16px
+				color #bdc7ce;
+			ins
+				text-decoration none
+				font-size 16px
+			
+		b
+			display:inline-block;
+			width: 12px;
+			height: 100%;
+			background: url(../img/arrow-bottom-gray.png) no-repeat 0px 17px;
+			background-size: 100%;
+			position: absolute
+			right 9px
+			top 0
+.js-select-mask
+	position fixed
+	width 100%
+	height 100%
+	top: 0;
+	left: 0
+	z-index: 900
+	opacity 1
+	background: rgba(0,0,0,.5);
+	
+
+// радио, чекбоксы
+.radio, .checkbox
+	display block
+	padding-bottom: 22px
+	white-space: nowrap;
+	ins
+		position relative
+		top: 2px
+	label
+		display block
+		input
+			display none
+			&:checked
+				&~ins
+					background-image: url(../img/checkbox.png)
+					background-position: center
+					background-size 100%
+					background-repeat: no-repeat
+		ins
+			width 20px
+			display inline-block
+			height 20px
+			vertical-align top
+			border: 1px solid #a7b5c0;
+		span
+			white-space: normal;
+			font-size: 16px
+			color: #6c7276
+			display inline-block
+			padding-left: 15px
+			vertical-align middle
+	&.radio
+		input
+			&:checked	
+				&~ins
+					background: white
+					text-align center
+					line-height: 16px
+					&:after
+						content ""
+						background: $BLUE
+						border-radius 50%
+						display: inline-block
+						vertical-align middle
+						height 12px
+						width 12px
+		ins
+			border-radius: 50%
+			vertical-align top
+			
+// кнопки
+[class*='btn-']
+	text-transform: uppercase
+	vertical-align middle
+	text-decoration none
+	border-style: solid
+	margin-bottom: 15px;
+	border-width: 1px
+	line-height: 38px
+	text-align center
+	font-size: 14px
+	cursor: pointer
+	display block
+	height 40px
+	width 100%
+	color: white
+	border-radius: 0;
+	&.btn-mini
+		margin-right: -4px
+		&+&
+			margin-left: 10%
+		line-height: 28px
+		height 30px
+		text-transform: none
+		width: 45%
+		display inline-block
+		border-style: solid
+		border-color:  $BLUE
+		background: transparent
+		color: $BLUE
+		font-weight: bold
+		&:hover
+			background: $BLUE
+			color: white
+	&.btn-blue
+		border-color:  $BLUE
+		background: $BLUE
+		&:hover
+			background: #0c5a9a
+			color: white
+	&.btn-white
+		border-color: $BLUE
+		color:  $BLUE
+		background: transparent
+		&:hover
+			background: #0c5a9a
+			color: white
+	&.btn-transparent
+		border-color: white
+		color:  white
+		background: transparent
+		&:hover
+			background: white
+			color: black
+			border-color: white
+
+// video-block
+.video-block
+	padding-bottom: 30px
+	padding-top: 10px
+	a
+		display block
+		width: 100%;
+		height 170px
+		position relative
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		.video-play
+			text-align center
+			line-height: 170px;
+			height 170px
+			width: 100%;
+			&:after
+				content: ''
+				background: rgba(255,255,255, .3)
+				border: 2px solid white
+				border-radius 50%
+				height 55px
+				vertical-align middle
+				display inline-block
+				width: 55px
+			&:before
+				content: ''
+				display: inline-block
+				border: 13px solid transparent
+				border-left: 26px solid #fff
+				position: absolute
+				left: 50%
+				top: 50%
+				margin-top: -11px
+				margin-left: -8px
+// социальные кнопки
+.social-block
+	padding 7px 0 10px 0
+	font-size 0
+	.white-block
+		padding-top: 0
+	&.bordered
+		border-top: 1px solid #e7f0f8
+		border-bottom: 1px solid #e7f0f8
+		padding-top: 13px
+		padding-bottom: 13px
+	a
+		display inline-block
+		width 30px
+		vertical-align middle
+		height 30px
+		border: 1px solid $BLUE
+		text-align center
+		line-height: 28px
+		margin-left: 11px
+		&:first-child
+			margin-left: 11px
+		i
+			vertical-align: middle;
+	.fl
+		color #0077c8
+		font-size: 14px
+		padding-top: 5px
+	&.white
+		a
+			background $BLUE
+
+
+// ПРОДУКТЫ
+.product-item
+	text-decoration none
+	display block
+	margin-bottom: 24px
+	border: 2px solid #ecf3f9
+	&:hover
+		border: 2px solid #0077c8
+		.product-item-text
+			background #0077c8
+			color white
+	.product-item-img
+		text-align center
+		padding-bottom: 20px
+		padding-top 20px
+		height 300px
+		vertical-align middle
+		img
+			display inline-block
+			vertical-align middle
+			margin auto
+			max-width: 60%
+			max-height: 260px
+	.product-item-text
+		background #ecf3f9
+		padding 15px
+		color: #0077c8
+		font-size 14px
+		line-height: 20px
+	.product-item-text__description
+		text-transform none
+	.product-item-text__title
+		text-transform uppercase
+		font-weight bold
+
+
+// Напрмер -  Задать вопрос
+.link-head
+	border-bottom 1px solid #e7f0f8
+	border-top 1px solid #e7f0f8
+	color: $BLUE
+	display block
+	line-height: 50px
+	padding-left 15px
+	text-decoration none
+	position relative
+	font-size: 14px;
+	&:before
+		content '';
+		display:inline-block;
+		font-size: 14px;
+		width: 8px;
+		height: 100%;
+		background-image: url(../img/arrow-right.png);
+		background-size: 100%;
+		background-position: 0px 19px;
+		background-repeat: no-repeat
+		position: absolute
+		right 18px
+		top 0
+		
+
+.toggle-hider-content
+	.white-block
+		position relative
+// Ссокрытие фильтра
+.toggle-hider
+	&:not(li)
+		.toggle-hider-header, a.tips
+			@extend  .link-head
+			&:after
+				font-size: 14px;
+				content attr(data-text-show)
+			&:before
+				width: 8px;
+				background-image: url(../img/arrow-right.png)
+				background-position: 0px 19px;
+	.toggle-hider-header, a.tips
+		&.active
+			&~.toggle-hider-content
+				display block
+			&:after
+				content attr(data-text-hide)
+			&:before
+				background-image: url(../img/arrow-bottom.png)
+				background-position: 0px 23px
+				width: 12px
+				
+	.toggle-hider-content
+		display none
+	
+// сбросить
+.reset-wrap
+	padding-bottom 20px
+	.reset
+		color: #9aa9b5
+		text-decoration none
+		font-size: 14px
+		text-align left
+		border-bottom: 1px dashed #9aa9b5
+	
+// Показать еще
+.show-more-wrap
+	padding-bottom: 13px
+
+
+.slider-block
+	width: 100%;
+	&.slider-text
+		.swiper-container
+			.swiper-slide
+				width: 100%
+				height: auto
+				text-align: left
+				p
+					margin-bottom: 0px
+	.swiper-container
+		width: 100%
+		height: 100%
+		.swiper-slide
+			text-align: center
+			font-size: 18px
+			background: #fff
+			display: -webkit-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-webkit-box-pack: center
+			-ms-flex-pack: center
+			-webkit-justify-content: center
+			justify-content: center
+			-webkit-box-align: center
+			-ms-flex-align: center
+			-webkit-align-items: center
+			align-items: center
+			height: 170px
+			background-size: cover
+			background-position: top center			
+	.swiper-pagination
+		text-align center
+		line-height: 32px
+		padding-bottom 10px
+		position static
+		padding-top: 5px
+		.swiper-pagination-bullet
+			width: 11px
+			height 11px
+			background: #d8e2eb;
+			opacity: 1
+			display inline-block
+			margin 0 5px 
+			&.swiper-pagination-bullet-active
+				background #0077c8
+
+
+.textable-item-toggler
+	display none
+	padding-top: 10px
+	margin-bottom: 20px
+	&.open-text
+		a
+			&:after
+				content attr(data-toggler-show)
+	a
+		font-size: 14px
+		color #9aa9b5
+		text-decoration: underline
+		&:after
+			content attr(data-toggler-hide)
+
+// стрица поичка
+.textable-item
+	border-top: 1px solid #e7f0f8
+	border-bottom: 1px solid #e7f0f8
+	margin-top: -1px
+	padding-bottom 5px
+	padding-top: 2px
+	.textable-item-title
+		text-decoration none
+	.textable-item-section 
+		span
+			padding-right: 3px
+	.textable-item-text
+		position relative
+		overflow hidden
+		margin-bottom: 10px;
+		&:not(.open-text):after
+			content ''
+			display inline-block
+			position absolute
+			bottom 0
+			left 0
+			width 100%
+			height 70px
+			background  -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.07) 55%, rgba(255,255,255,1) 100%)
+			background  -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(55%,rgba(255,255,255,0.07)), color-stop(100%,rgba(255,255,255,1)))
+			background  -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.07) 55%,rgba(255,255,255,1) 100%)
+			background  -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.07) 55%,rgba(255,255,255,1) 100%)
+			background  -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.07) 55%,rgba(255,255,255,1) 100%)
+			background  linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.07) 55%,rgba(255,255,255,1) 100%)
+		
+// Новости
+.news-item
+	padding-bottom 18px
+	border-top 1px solid #e7f0f8
+	border-bottom 1px solid #e7f0f8
+	margin-top: -1px
+	.news-item-link
+		display block
+		height 170px
+		position relative
+		margin-bottom: 10px
+		background-size cover
+		background-position center
+		&:after
+			content ''
+			display inline-block
+			height 100%
+			width: 100%
+			background: -moz-linear-gradient(top,  rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.5) 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.4)), color-stop(100%,rgba(0,0,0,0.43)));
+			background: -webkit-linear-gradient(top,  rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.5) 100%);
+			background: -o-linear-gradient(top,  rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.5) 100%);
+			background: -ms-linear-gradient(top,  rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.5) 100%);
+			background: linear-gradient(to bottom,  rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.5) 100%);
+	.news-item-title
+		position absolute
+		bottom 0;
+		width: 100%;
+		left 0
+		padding 10px
+		&:after
+			color white
+	p
+		position relative
+		margin-bottom: 10px;
+		&.open-text
+			&:after
+				display none
+		&:after
+			content ''
+			display inline-block
+			position absolute
+			bottom 0
+			left 0
+			width 100%
+			height 70px
+			background  -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.07) 55%, rgba(255,255,255,1) 100%)
+			background  -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(55%,rgba(255,255,255,0.07)), color-stop(100%,rgba(255,255,255,1)))
+			background  -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.07) 55%,rgba(255,255,255,1) 100%)
+			background  -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.07) 55%,rgba(255,255,255,1) 100%)
+			background  -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.07) 55%,rgba(255,255,255,1) 100%)
+			background  linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.07) 55%,rgba(255,255,255,1) 100%)
+
+// пагинатор у конструкра
+.page-paginator
+	text-align center
+	padding-bottom: 30px
+	i
+		position relative
+		top: 1px
+		&.icon-arrow-left
+			margin-right: 12px
+		&.icon-arrow-right
+			margin-left: 12px
+	a, span, i
+		display inline-block
+		vertical-align middle
+		color $BLUE
+		text-decoration none
+		text-transform uppercase
+		font-size: 14px
+		
+// заголовок с шагом у конструкра
+.title-numeric
+	color $BLUE
+	font-weight bold
+	font-size 14px
+	padding-bottom 10px;
+	white-space: nowrap;
+	span
+		white-space: normal
+		vertical-align: middle
+		display: inline-block
+		line-height: 14px
+	&:before
+		content attr(data-numer)
+		height 24px
+		width 24px
+		display inline-block
+		vertical-align middle
+		text-align center
+		margin-right: 8px
+		font-size: 21px;
+		line-height: 24px
+		border: 2px solid $BLUE
+		@extend .yeseva-one;
+		
+//  слайде с выбором цвета волос
+.slider-container
+	position: relative;
+	margin-bottom: 20px
+	.colorize-head-title
+		position relative
+		z-index 11
+		background: white;
+		.colorize-head-title-title
+			padding-top: 20px
+			margin-bottom 0
+			line-height: 20px;
+		.colorize-head-title-descrpiption
+			margin-bottom: 0
+		  	padding-bottom: 0;
+	&:before, &:after
+		content ''
+		position absolute
+		bottom 0px
+		z-index 1
+		width 15px
+		@extend .animated;
+		top 0px
+	&:before
+		right: 1px;
+		background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.69) 76%, rgba(255,255,255,0.75) 100%);
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(76%,rgba(255,255,255,0.69)), color-stop(100%,rgba(255,255,255,0.75)));
+		background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.69) 76%,rgba(255,255,255,0.75) 100%);
+		background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.69) 76%,rgba(255,255,255,0.75) 100%);
+		background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.69) 76%,rgba(255,255,255,0.75) 100%);
+		background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.69) 76%,rgba(255,255,255,0.75) 100%);
+	&:after
+		z-index: 1;
+		background: -moz-linear-gradient(left,  rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.69) 24%, rgba(255,255,255,0) 100%);
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0.75)), color-stop(24%,rgba(255,255,255,0.69)), color-stop(100%,rgba(255,255,255,0)));
+		background: -webkit-linear-gradient(left,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.69) 24%,rgba(255,255,255,0) 100%);
+		background: -o-linear-gradient(left,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.69) 24%,rgba(255,255,255,0) 100%);
+		background: -ms-linear-gradient(left,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.69) 24%,rgba(255,255,255,0) 100%);
+		background: linear-gradient(to right,  rgba(255,255,255,0.75) 0%,rgba(255,255,255,0.69) 24%,rgba(255,255,255,0) 100%);
+	.colorize-head
+		width 46px
+		display inline-block
+	&.left-end
+		&:after
+			@extend .fadeOut
+	&.right-end
+		&:before
+			@extend .fadeOut
+	.scroller-block
+		border: 1px solid #e7f0f8
+		padding-top: 7px;
+		padding-left: 7px
+		overflow auto
+		position relative
+		.scroller-slide
+			width 52px
+			-webkit-flex-shrink: 0;
+			-ms-flex: 0 0 auto;
+			flex-shrink: 0;
+		.scroller-wrap
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+
+.rowed
+	margin-left: -4px;	
+	margin-right: -4px;	
+
+.no-padding-top
+	padding-top 0
+
+.before-after-colorz img, img.mw100
+	max-width 100%
+
+.colorize-head-wrap
+	width 100%
+	font-size: 0
+	&.long
+		text-align justify;
+		margin-bottom: 13px
+		ins 
+			display block
+		span
+			display block
+		&:after
+			content ''
+			width calc( 50% - 4px )
+			width -webkit-calc( 50% - 4px )
+			width -moz-calc( 50% - 4px )
+			height 0px
+			display inline-block
+			vertical-align top
+			margin-bottom: 7px
+		.colorize-head
+			ins
+				height 50px
+			span 
+				font-size 14px
+				padding-top: 3px
+				color #9aa9b5
+			input:checked
+				&~span
+					color: $BLUE
+//  айтем цвета волос
+.colorize-head
+	width calc( 50% - 4px )
+	width -webkit-calc( 50% - 4px )
+	width -moz-calc( 50% - 4px )
+	display inline-block
+	vertical-align top
+	margin-bottom: 7px
+	&:last-child
+		margin-bottom: 0
+	
+	ins
+		display block
+		height 100%
+		border: 2px solid transparent
+		width: 100%
+		background-position: center
+		background-size: 107%
+	.acitve, input:checked
+		&~ins
+			border: 2px solid $BLUE
+	input
+		display none
+		
+	label
+		display inline-block
+		width 46px
+		height 46px
+		
+.tabs-artile
+	&.active
+		display block
+	display none
+.search-colorzz
+	margin-bottom: 15px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center
+	background-image: url(../img/start-bg.png)
+	padding-left: 15px
+	padding-right: 15px
+	padding-top: 35px
+	padding-bottom: 25px
+	h2
+		margin-bottom: 15px
+		padding-top: 0px; 
+		font-size: 20px
+		text-transform uppercase
+	a
+		margin-top: 41px
+.t-prod
+	img
+		max-width 100%;
+		display block
+		margin auto
+		margin-bottom: 20px
+	ul
+		padding-left: 21px;
+		margin-bottom: 17px;
+		li
+			h5
+				margin-bottom: 0px
+				display inline
+				font-weight: bold;
+			p 
+				display inline

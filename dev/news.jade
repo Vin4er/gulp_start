@@ -1,0 +1,49 @@
+//- подключаем шаблон
+extends ./layouts/layout.jade
+
+//- Тайтл
+block title
+	title Новости
+
+
+//- Описывам контен
+block content
+	.white-block
+		h1 Новости
+	//- Новости-айтем
+	.news-item
+		.white-block
+			a.news-item-link(href="#", style="background-image: url(assets/img/estel_parf.jpg);")
+				h3.news-item-title.white(data-date="10 Ноября, 2015") ESTEL стала партнером премии Fashion TV
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque facere obcaecati est, nihil aut consequuntur nesciunt cupiditate numquam ex eum iste voluptate expedita eos, aliquam harum in saepe velit dolor.
+			a(href="#") Подробнее
+	.news-item
+		.white-block
+			a.news-item-link(href="#", style="background-image: url(assets/img/estel_parf.jpg);")
+				h3.news-item-title.white(data-date="10 Ноября, 2015") ESTEL стала партнером премии Fashion TV
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque facere obcaecati est, nihil aut consequuntur nesciunt cupiditate numquam ex eum iste voluptate expedita eos, aliquam harum in saepe velit dolor.
+			a(href="#") Подробнее
+	.news-item
+		.white-block
+			a(href="#", style="background-image: url(assets/img/estel_parf.jpg);").news-item-link
+				h3.news-item-title.white(data-date="10 Ноября, 2015") ESTEL стала партнером премии Fashion TV
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque facere obcaecati est, nihil aut consequuntur nesciunt cupiditate numquam ex eum iste voluptate expedita eos, aliquam harum in saepe velit dolor.
+			a(href="#") Подробнее
+	.news-item
+		.white-block
+			a(href="#", style="background-image: url(assets/img/estel_parf.jpg);").news-item-link
+				h3.news-item-title.white(data-date="10 Ноября, 2015") ESTEL стала партнером премии Fashion TV
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque facere obcaecati est, nihil aut consequuntur nesciunt cupiditate numquam ex eum iste voluptate expedita eos, aliquam harum in saepe velit dolor.
+			a(href="#") Подробнее
+	.news-item
+		.white-block
+			a(href="#", style="background-image: url(assets/img/estel_parf.jpg);").news-item-link
+				h3.news-item-title.white(data-date="10 Ноября, 2015") ESTEL стала партнером премии Fashion TV
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque facere obcaecati est, nihil aut consequuntur nesciunt cupiditate numquam ex eum iste voluptate expedita eos, aliquam harum in saepe velit dolor.
+			a(href="#") Подробнее
+
+	//- показать еще
+	.white-block
+		.show-more-wrap
+			a(href="#").btn-white Показать еще
+

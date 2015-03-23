@@ -1,0 +1,35 @@
+.nav
+	.nav-search
+		.input-wrap.search
+			form(action="")
+				input(type="submit").search-submit
+				input(type='text', placeholder='Поиск').search-search
+				input(type="reset").search-reset
+	.nav-list
+		ol
+			li
+				a(href="#").nav-active
+					span Продукция
+			li
+				a(href="#")
+					span Подобрать цвет
+			li.toggle-hider
+				a(href="#").toggle-hider-header
+					span Советы профессионалов
+					b.icon-arrow-bottom
+				ol.toggle-hider-content
+					li
+						a(href="#")
+							span Советы по окрашиванию
+					li
+						a(href="#")
+							span Вопросы покупателей 
+			li
+				a(href="#")
+					span О компании
+			li
+				a(href="#")
+					span Новости
+			li
+				a(href="#")
+					span Контакты

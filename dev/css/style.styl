@@ -1,0 +1,288 @@
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+  }
+}
+
+.fadeOutDown {
+  -webkit-animation-name: fadeOutDown;
+          animation-name: fadeOutDown;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+}
+.border-top
+	border-top 1px solid #e7f0f8
+	
+select.js-select
+	position absolute
+	left: -9999px
+.header-scrollable{
+	margin-bottom: -15px;
+}
+.backtokines
+	position: fixed;
+	top: 63px;
+	left: 0;
+	display none
+	width: 100%;
+	background: #fff;
+	color: #0077c8;
+	font-size: 14px;
+	line-height: 44px;
+	height: 44px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-animation-duration: .2s !important;
+	animation-duration: .2s !important;
+	&.lighter
+		display block
+		@extend .animated;
+		@extend .fadeInDown 
+	&:after
+		display none
+		content ''
+		display block
+		position absolute
+		top: 100%;
+		background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0.07) 45%, rgba(255,255,255,0) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(45%,rgba(255,255,255,0.07)), color-stop(100%,rgba(255,255,255,0)));
+		background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.07) 45%,rgba(255,255,255,0) 100%);
+		background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.07) 45%,rgba(255,255,255,0) 100%);
+		background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.07) 45%,rgba(255,255,255,0) 100%);
+		background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.07) 45%,rgba(255,255,255,0) 100%);
+		height 20px
+		width 100%
+html 
+	body 
+		section
+			padding-top 62px
+			padding-bottom: 14px
+
+			.map-popup-address
+				padding-bottom: 10px
+			.map-popup-content
+				i
+					margin-right: 6px
+				font-size: 14px;
+				color #6c7276
+			.products-block
+				@extend .border-top
+				margin-top: 18px;
+			.new-social
+				padding-bottom: 24px
+			.input-wrap.search
+				padding-bottom: 0
+				margin-bottom 0
+			.tips
+				@extend .border-top
+			.search-block
+				@extend .border-top
+			.contacts-block
+				@extend .border-top
+				.contacts-block-text
+					padding-bottom: 20px
+				p 
+					a 
+						text-decoration none
+						color inherit
+			.konstruktor
+				@extend .border-top
+				h5
+					margin-bottom: 5px
+				h2
+					padding-top: 0;
+			.colorz-block
+				@extend .border-top
+			.e404
+				@extend .border-top
+				position: relative;
+
+			.about
+				@extend .border-top
+			.product-block
+				@extend .border-top
+				padding-bottom: 20px
+				.toggle-hider-content
+					border-bottom: 1px solid #e7f0f8
+			#map
+				div[style*="map-cluster.png"]
+					line-height: 39px !important
+				.gmnoprint
+					display none
+				img
+					max-width none
+			.accrod-block
+				position relative
+				overflow hidden
+				h3
+					text-transform: uppercase
+					padding-top: 12px;
+					padding-bottom 0px
+					margin-bottom 12px
+				p
+					margin-bottom 12px
+					
+				h2
+					text-transform: uppercase
+					padding-top: 12px;
+					padding-bottom 12px
+					color white;
+					margin: 0
+					padding-right: 15px
+					padding-left: 15px
+					background: rgba(0, 119, 200, 0.74)
+					position absolute
+					bottom: 0
+					width: 100%
+				.accrod-block-toggler
+					display block
+					overflow hidden
+					text-decoration none
+					height 100px
+					transition height .3s
+					-moz-transition height .3s
+					-webkit-transition height .3s
+					&.focused
+						height: 224px
+						h2
+							@extend .animated
+							@extend .fadeOutDown
+						&~.accrod-block-bg
+							@extend .animated
+							@extend .fadeInDown
+							display block
+				.accrod-block-bg
+					position absolute
+					bottom: 0
+					background: rgba(255,255,255,.8)
+					padding: 3px 15px 0px 15px
+					opacity: 0
+					display none
+					h2
+						color: #0077c8
+					p
+						color: #0077c8
+				.tips-block
+					@extend .border-top
+					display block
+.tips-block
+	@extend .border-top
+.toggle-margin
+	padding-bottom: 20px
+.toggle-hider
+	a.tips
+		margin-bottom: 20px
+		border: 0!important;
+		border-bottom: 1px dashed #0077c8 !important;
+		color: #0077c8;
+		line-height: 17px !important;
+		display: inline !important;
+		padding: 0!important;
+		&:after
+			padding-bottom 20px
+			display inline
+		&~.back-top
+			display none
+		&.active
+			&:before
+				right: -18px!important
+				bottom: 0px !important
+				background-image: url("../img/arrow-bottom.png") !important
+				background-position: 0px 11px!important
+				width: 12px !important
+				background-size: 90% !important
+			&~.back-top
+				display: block;
+				margin-top: -42px;
+				margin-bottom: 50px;
+		&:before
+			right: -20px!important
+			z-index 3
+			height 20px !important
+			top: auto !important
+			bottom: -2px !important
+			width: 13px !important
+			background-image: url("../img/arrow-right.png")
+			background-position: 0px 6px !important
+			background-size: 50% !important
+.tips-block
+	h3
+		border-top 1px solid #e7f0f8
+		color: #6c7379;
+		padding-top: 14px;
+		text-transform uppercase 
+		font-weight: bold
+		font-size: 17px;
+		font-family: 'Noto Sans', sans-serif;
+	.toggle-hider-content
+		padding-top: 10px
+		padding-bottom: 40px
+		border-bottom 1px solid #e7f0f8
+.header-scrollable
+	.header-scrollable-item
+		a
+			text-decoration none
+			display block
+			margin-bottom: 20px
+			
+		span
+			font-size 15px
+			color #0077c8
+			font-weight: bold
+			border-bottom 1px dashed #0077c8

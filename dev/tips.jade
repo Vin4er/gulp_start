@@ -1,0 +1,516 @@
+//- подключаем шаблон
+extends ./layouts/layout.jade
+
+
+//- Тайтл
+block title
+	title ESTEL Haute couture
+
+
+//- Описывам контен
+block content
+	.white-block
+		h1 советы по окрашиванию
+	.tips-block
+		.white-block
+			.header-scrollable
+				div.header-scrollable-item
+					a(href="#scrollable-1")
+						span О теории
+				div.header-scrollable-item
+					a(href="#scrollable-2")
+						span Об окрашивании волос
+				div.header-scrollable-item
+					a(href="#scrollable-3")
+						span Об уходе за волосами
+
+		.body-scrollable.white-block
+			h3#scrollable-1 О теории
+			.toggle-margin
+				.toggle-hider
+					a.tips(href="#",data-text-hide="Процесс роста волос", data-text-show="Процесс роста волос")
+					.toggle-hider-content
+						a(href="#").proffesional-block
+							.proffesional-img.fl(style="background-image: url(assets/img/estel_brov.jpg)")
+							div.proffesional-title Дарья Стаховская
+							p.proffesional-text Топ-стилист ESTEL Proffesional
+							.clearfix
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						blockquote Конкурс «Территория  праздника ESTEL» подошел  к концу и мы с радостью объявляем топ-100 финалистов!
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h2 Новый коллекционный  парфюм ESTEL Haute  Couture
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h5.title-block Фотографии
+						//- Слайдер
+						.slider-block
+							.swiper-container
+								.swiper-wrapper
+									.swiper-slide(style="background-image: url(assets/img/estel_brov.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_parf.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_telo.jpg)")
+							.swiper-pagination &nbsp;
+									.video-block
+						h5.title-block Видео
+						.video-block
+							a(href="#", target="_blank", style="background-image: url(assets/img/estel-product__tmp.png)").video-block-img
+								.video-play
+					a(href="#").back-top Свернуть
+		
+			.toggle-margin
+				.toggle-hider
+					a.tips(href="#",data-text-hide="Натуральный пигмент волос", data-text-show="Натуральный пигмент волос ")
+					.toggle-hider-content
+						
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						blockquote Конкурс «Территория  праздника ESTEL» подошел  к концу и мы с радостью объявляем топ-100 финалистов!
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h2 Новый коллекционный  парфюм ESTEL Haute  Couture
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h5.title-block Фотографии
+						//- Слайдер
+						.slider-block
+							.swiper-container
+								.swiper-wrapper
+									.swiper-slide(style="background-image: url(assets/img/estel_brov.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_parf.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_telo.jpg)")
+							.swiper-pagination &nbsp;
+									.video-block
+						h5.title-block Видео
+						.video-block
+							a(href="#", target="_blank", style="background-image: url(assets/img/estel-product__tmp.png)").video-block-img
+								.video-play
+					a(href="#").back-top Свернуть
+				
+			.toggle-margin
+				.toggle-hider
+					a.tips(href="#",data-text-hide="Строение волоса", data-text-show="Строение волоса")
+					.toggle-hider-content
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						blockquote Конкурс «Территория  праздника ESTEL» подошел  к концу и мы с радостью объявляем топ-100 финалистов!
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h2 Новый коллекционный  парфюм ESTEL Haute  Couture
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h5.title-block Фотографии
+						//- Слайдер
+						.slider-block
+							.swiper-container
+								.swiper-wrapper
+									.swiper-slide(style="background-image: url(assets/img/estel_brov.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_parf.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_telo.jpg)")
+							.swiper-pagination &nbsp;
+									.video-block
+						h5.title-block Видео
+						.video-block
+							a(href="#", target="_blank", style="background-image: url(assets/img/estel-product__tmp.png)").video-block-img
+								.video-play
+					a(href="#").back-top Свернуть
+			.toggle-margin
+				.toggle-hider
+					a.tips(href="#",data-text-hide="Процесс роста волос", data-text-show="Процесс роста волос")
+					.toggle-hider-content
+						a(href="#").proffesional-block
+							.proffesional-img.fl(style="background-image: url(assets/img/estel_brov.jpg)")
+							div.proffesional-title Дарья Стаховская
+							p.proffesional-text Топ-стилист ESTEL Proffesional
+							.clearfix
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						blockquote Конкурс «Территория  праздника ESTEL» подошел  к концу и мы с радостью объявляем топ-100 финалистов!
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h2 Новый коллекционный  парфюм ESTEL Haute  Couture
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h5.title-block Фотографии
+						//- Слайдер
+						.slider-block
+							.swiper-container
+								.swiper-wrapper
+									.swiper-slide(style="background-image: url(assets/img/estel_brov.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_parf.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_telo.jpg)")
+							.swiper-pagination &nbsp;
+									.video-block
+						h5.title-block Видео
+						.video-block
+							a(href="#", target="_blank", style="background-image: url(assets/img/estel-product__tmp.png)").video-block-img
+								.video-play
+					a(href="#").back-top Свернуть
+		
+			.toggle-margin
+				.toggle-hider
+					a.tips(href="#",data-text-hide="Натуральный пигмент волос", data-text-show="Натуральный пигмент волос ")
+					.toggle-hider-content
+						
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						blockquote Конкурс «Территория  праздника ESTEL» подошел  к концу и мы с радостью объявляем топ-100 финалистов!
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h2 Новый коллекционный  парфюм ESTEL Haute  Couture
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h5.title-block Фотографии
+						//- Слайдер
+						.slider-block
+							.swiper-container
+								.swiper-wrapper
+									.swiper-slide(style="background-image: url(assets/img/estel_brov.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_parf.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_telo.jpg)")
+							.swiper-pagination &nbsp;
+									.video-block
+						h5.title-block Видео
+						.video-block
+							a(href="#", target="_blank", style="background-image: url(assets/img/estel-product__tmp.png)").video-block-img
+								.video-play
+					a(href="#").back-top Свернуть
+				
+			.toggle-margin
+				.toggle-hider
+					a.tips(href="#",data-text-hide="Строение волоса", data-text-show="Строение волоса")
+					.toggle-hider-content
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						blockquote Конкурс «Территория  праздника ESTEL» подошел  к концу и мы с радостью объявляем топ-100 финалистов!
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h2 Новый коллекционный  парфюм ESTEL Haute  Couture
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h5.title-block Фотографии
+						//- Слайдер
+						.slider-block
+							.swiper-container
+								.swiper-wrapper
+									.swiper-slide(style="background-image: url(assets/img/estel_brov.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_parf.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_telo.jpg)")
+							.swiper-pagination &nbsp;
+									.video-block
+						h5.title-block Видео
+						.video-block
+							a(href="#", target="_blank", style="background-image: url(assets/img/estel-product__tmp.png)").video-block-img
+								.video-play
+					a(href="#").back-top Свернуть
+		
+			a.btn-white(href="#") Показать еще
+	
+			h3#scrollable-2 Об окрашивании волос
+		
+			.toggle-margin
+				.toggle-hider
+					a.tips(href="#",data-text-hide="Процесс роста волос", data-text-show="Процесс роста волос")
+					.toggle-hider-content
+						a(href="#").proffesional-block
+							.proffesional-img.fl(style="background-image: url(assets/img/estel_brov.jpg)")
+							div.proffesional-title Дарья Стаховская
+							p.proffesional-text Топ-стилист ESTEL Proffesional
+							.clearfix
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						blockquote Конкурс «Территория  праздника ESTEL» подошел  к концу и мы с радостью объявляем топ-100 финалистов!
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h2 Новый коллекционный  парфюм ESTEL Haute  Couture
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h5.title-block Фотографии
+						//- Слайдер
+						.slider-block
+							.swiper-container
+								.swiper-wrapper
+									.swiper-slide(style="background-image: url(assets/img/estel_brov.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_parf.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_telo.jpg)")
+							.swiper-pagination &nbsp;
+									.video-block
+						h5.title-block Видео
+						.video-block
+							a(href="#", target="_blank", style="background-image: url(assets/img/estel-product__tmp.png)").video-block-img
+								.video-play
+					a(href="#").back-top Свернуть
+			
+			.toggle-margin
+				.toggle-hider
+					a.tips(href="#",data-text-hide="Натуральный пигмент волос", data-text-show="Натуральный пигмент волос ")
+					.toggle-hider-content
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+							blockquote Конкурс «Территория  праздника ESTEL» подошел  к концу и мы с радостью объявляем топ-100 финалистов!
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+							h2 Новый коллекционный  парфюм ESTEL Haute  Couture
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+							h5.title-block Фотографии
+							//- Слайдер
+							.slider-block
+								.swiper-container
+									.swiper-wrapper
+										.swiper-slide(style="background-image: url(assets/img/estel_brov.jpg)")
+										.swiper-slide(style="background-image: url(assets/img/estel_parf.jpg)")
+										.swiper-slide(style="background-image: url(assets/img/estel_telo.jpg)")
+								.swiper-pagination &nbsp;
+										.video-block
+							h5.title-block Видео
+							.video-block
+								a(href="#", target="_blank", style="background-image: url(assets/img/estel-product__tmp.png)").video-block-img
+									.video-play
+						a(href="#").back-top Свернуть
+				.toggle-hider
+					a.tips(href="#", data-text-hide="Строение волоса", data-text-show="Строение волоса")
+					.toggle-hider-content
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+							blockquote Конкурс «Территория  праздника ESTEL» подошел  к концу и мы с радостью объявляем топ-100 финалистов!
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+							h2 Новый коллекционный  парфюм ESTEL Haute  Couture
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+							h5.title-block Фотографии
+							//- Слайдер
+							.slider-block
+								.swiper-container
+									.swiper-wrapper
+										.swiper-slide(style="background-image: url(assets/img/estel_brov.jpg)")
+										.swiper-slide(style="background-image: url(assets/img/estel_parf.jpg)")
+										.swiper-slide(style="background-image: url(assets/img/estel_telo.jpg)")
+								.swiper-pagination &nbsp;
+										.video-block
+							h5.title-block Видео
+							.video-block
+								a(href="#", target="_blank", style="background-image: url(assets/img/estel-product__tmp.png)").video-block-img
+									.video-play
+						a(href="#").back-top Свернуть
+			
+			a.btn-white(href="#") Показать еще
+
+			h3#scrollable-3 Об уходе за волосами
+
+			.toggle-margin
+				.toggle-hider
+					a.tips(href="#",data-text-hide="Процесс роста волос", data-text-show="Процесс роста волос")
+					.toggle-hider-content
+						a(href="#").proffesional-block
+							.proffesional-img.fl(style="background-image: url(assets/img/estel_brov.jpg)")
+							div.proffesional-title Дарья Стаховская
+							p.proffesional-text Топ-стилист ESTEL Proffesional
+							.clearfix
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						blockquote Конкурс «Территория  праздника ESTEL» подошел  к концу и мы с радостью объявляем топ-100 финалистов!
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h2 Новый коллекционный  парфюм ESTEL Haute  Couture
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h5.title-block Фотографии
+						//- Слайдер
+						.slider-block
+							.swiper-container
+								.swiper-wrapper
+									.swiper-slide(style="background-image: url(assets/img/estel_brov.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_parf.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_telo.jpg)")
+							.swiper-pagination &nbsp;
+									.video-block
+						h5.title-block Видео
+						.video-block
+							a(href="#", target="_blank", style="background-image: url(assets/img/estel-product__tmp.png)").video-block-img
+								.video-play
+					a(href="#").back-top Свернуть
+		
+			.toggle-margin
+				.toggle-hider
+					a.tips(href="#",data-text-hide="Натуральный пигмент волос", data-text-show="Натуральный пигмент волос ")
+					.toggle-hider-content
+						
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						blockquote Конкурс «Территория  праздника ESTEL» подошел  к концу и мы с радостью объявляем топ-100 финалистов!
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h2 Новый коллекционный  парфюм ESTEL Haute  Couture
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h5.title-block Фотографии
+						//- Слайдер
+						.slider-block
+							.swiper-container
+								.swiper-wrapper
+									.swiper-slide(style="background-image: url(assets/img/estel_brov.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_parf.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_telo.jpg)")
+							.swiper-pagination &nbsp;
+									.video-block
+						h5.title-block Видео
+						.video-block
+							a(href="#", target="_blank", style="background-image: url(assets/img/estel-product__tmp.png)").video-block-img
+								.video-play
+					a(href="#").back-top Свернуть
+				
+			.toggle-margin
+				.toggle-hider
+					a.tips(href="#",data-text-hide="Строение волоса", data-text-show="Строение волоса")
+					.toggle-hider-content
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						blockquote Конкурс «Территория  праздника ESTEL» подошел  к концу и мы с радостью объявляем топ-100 финалистов!
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h2 Новый коллекционный  парфюм ESTEL Haute  Couture
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h5.title-block Фотографии
+						//- Слайдер
+						.slider-block
+							.swiper-container
+								.swiper-wrapper
+									.swiper-slide(style="background-image: url(assets/img/estel_brov.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_parf.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_telo.jpg)")
+							.swiper-pagination &nbsp;
+									.video-block
+						h5.title-block Видео
+						.video-block
+							a(href="#", target="_blank", style="background-image: url(assets/img/estel-product__tmp.png)").video-block-img
+								.video-play
+					a(href="#").back-top Свернуть
+			.toggle-margin
+				.toggle-hider
+					a.tips(href="#",data-text-hide="Процесс роста волос", data-text-show="Процесс роста волос")
+					.toggle-hider-content
+						a(href="#").proffesional-block
+							.proffesional-img.fl(style="background-image: url(assets/img/estel_brov.jpg)")
+							div.proffesional-title Дарья Стаховская
+							p.proffesional-text Топ-стилист ESTEL Proffesional
+							.clearfix
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						blockquote Конкурс «Территория  праздника ESTEL» подошел  к концу и мы с радостью объявляем топ-100 финалистов!
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h2 Новый коллекционный  парфюм ESTEL Haute  Couture
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h5.title-block Фотографии
+						//- Слайдер
+						.slider-block
+							.swiper-container
+								.swiper-wrapper
+									.swiper-slide(style="background-image: url(assets/img/estel_brov.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_parf.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_telo.jpg)")
+							.swiper-pagination &nbsp;
+									.video-block
+						h5.title-block Видео
+						.video-block
+							a(href="#", target="_blank", style="background-image: url(assets/img/estel-product__tmp.png)").video-block-img
+								.video-play
+					a(href="#").back-top Свернуть
+		
+			.toggle-margin
+				.toggle-hider
+					a.tips(href="#",data-text-hide="Натуральный пигмент волос", data-text-show="Натуральный пигмент волос ")
+					.toggle-hider-content
+						
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						blockquote Конкурс «Территория  праздника ESTEL» подошел  к концу и мы с радостью объявляем топ-100 финалистов!
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h2 Новый коллекционный  парфюм ESTEL Haute  Couture
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h5.title-block Фотографии
+						//- Слайдер
+						.slider-block
+							.swiper-container
+								.swiper-wrapper
+									.swiper-slide(style="background-image: url(assets/img/estel_brov.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_parf.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_telo.jpg)")
+							.swiper-pagination &nbsp;
+									.video-block
+						h5.title-block Видео
+						.video-block
+							a(href="#", target="_blank", style="background-image: url(assets/img/estel-product__tmp.png)").video-block-img
+								.video-play
+					a(href="#").back-top Свернуть
+				
+			.toggle-margin
+				.toggle-hider
+					a.tips(href="#",data-text-hide="Строение волоса", data-text-show="Строение волоса")
+					.toggle-hider-content
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						blockquote Конкурс «Территория  праздника ESTEL» подошел  к концу и мы с радостью объявляем топ-100 финалистов!
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h2 Новый коллекционный  парфюм ESTEL Haute  Couture
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h5.title-block Фотографии
+						//- Слайдер
+						.slider-block
+							.swiper-container
+								.swiper-wrapper
+									.swiper-slide(style="background-image: url(assets/img/estel_brov.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_parf.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_telo.jpg)")
+							.swiper-pagination &nbsp;
+									.video-block
+						h5.title-block Видео
+						.video-block
+							a(href="#", target="_blank", style="background-image: url(assets/img/estel-product__tmp.png)").video-block-img
+								.video-play
+					a(href="#").back-top Свернуть
+			.toggle-margin
+				.toggle-hider
+					a.tips(href="#",data-text-hide="Процесс роста волос", data-text-show="Процесс роста волос")
+					.toggle-hider-content
+						a(href="#").proffesional-block
+							.proffesional-img.fl(style="background-image: url(assets/img/estel_brov.jpg)")
+							div.proffesional-title Дарья Стаховская
+							p.proffesional-text Топ-стилист ESTEL Proffesional
+							.clearfix
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						blockquote Конкурс «Территория  праздника ESTEL» подошел  к концу и мы с радостью объявляем топ-100 финалистов!
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h2 Новый коллекционный  парфюм ESTEL Haute  Couture
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h5.title-block Фотографии
+						//- Слайдер
+						.slider-block
+							.swiper-container
+								.swiper-wrapper
+									.swiper-slide(style="background-image: url(assets/img/estel_brov.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_parf.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_telo.jpg)")
+							.swiper-pagination &nbsp;
+									.video-block
+						h5.title-block Видео
+						.video-block
+							a(href="#", target="_blank", style="background-image: url(assets/img/estel-product__tmp.png)").video-block-img
+								.video-play
+					a(href="#").back-top Свернуть
+		
+			.toggle-margin
+				.toggle-hider
+					a.tips(href="#",data-text-hide="Натуральный пигмент волос", data-text-show="Натуральный пигмент вонт волонт вонт волос пигмент волос ")
+					.toggle-hider-content
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						blockquote Конкурс «Территория  праздника ESTEL» подошел  к концу и мы с радостью объявляем топ-100 финалистов!
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h2 Новый коллекционный  парфюм ESTEL Haute  Couture
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h5.title-block Фотографии
+						//- Слайдер
+						.slider-block
+							.swiper-container
+								.swiper-wrapper
+									.swiper-slide(style="background-image: url(assets/img/estel_brov.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_parf.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_telo.jpg)")
+							.swiper-pagination &nbsp;
+									.video-block
+						h5.title-block Видео
+						.video-block
+							a(href="#", target="_blank", style="background-image: url(assets/img/estel-product__tmp.png)").video-block-img
+								.video-play
+					a(href="#").back-top Свернуть
+			
+			.toggle-margin
+				.toggle-hider
+					a.tips(href="#",data-text-hide="Строение волоса", data-text-show="Строение волоса")
+					.toggle-hider-content
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						blockquote Конкурс «Территория  праздника ESTEL» подошел  к концу и мы с радостью объявляем топ-100 финалистов!
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h2 Новый коллекционный  парфюм ESTEL Haute  Couture
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quos, eveniet earum, similique nostrum hic vel reiciendis alias rerum doloremque! Beatae qui aspernatur dolorem aut, officia expedita quo, perferendis inventore.
+						h5.title-block Фотографии
+						//- Слайдер
+						.slider-block
+							.swiper-container
+								.swiper-wrapper
+									.swiper-slide(style="background-image: url(assets/img/estel_brov.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_parf.jpg)")
+									.swiper-slide(style="background-image: url(assets/img/estel_telo.jpg)")
+							.swiper-pagination &nbsp;
+									.video-block
+						h5.title-block Видео
+						.video-block
+							a(href="#", target="_blank", style="background-image: url(assets/img/estel-product__tmp.png)").video-block-img
+								.video-play
+					a(href="#").back-top Свернуть
+
+			a.btn-white(href="#") Показать еще

@@ -1,0 +1,29 @@
+//- подключаем шаблон
+extends ./layouts/layout.jade
+
+
+//- Тайтл
+block title
+	title Найди свой цвет
+
+
+//- Описывам контен
+block content
+	.white-block
+		h1 Найди свой цвет
+		//- Слайдер
+	.konstruktor
+		.white-block
+			.title-numeric(data-numer="2") 
+				span Совет по окрашиванию волос
+		.white-block
+			p  Рекомендуем вам не окрашивать  волосы по истечении двухнедельного минимального срока после окрашивания хной или басмой,  так как результат может получиться  не предсказуемым в условиях домашнего окрашивания. 
+		.white-block
+			.page-paginator
+				a(href="#").fl
+					i.icon-arrow-left
+					span назад
+				span.page-paginator__numer 2/8
+				a(href="#").fr
+					span далее
+					i.icon-arrow-right

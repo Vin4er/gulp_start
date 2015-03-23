@@ -1,0 +1,66 @@
+$NAVWIDTH = 275px;
+
+body
+	nav
+		z-index 92
+		position fixed
+		top: 0
+		bottom: 0
+		left: 0
+		background: white;
+		width: $NAVWIDTH
+		overflow: auto
+		display none
+		&.nav__opened
+			display block
+		.nav-search
+			padding 15px 23px 0 23px
+		.nav-list
+			ol
+				list-style-type none
+				li
+					border-top  1px solid #d8e4ee
+					li
+						a
+							padding-left: 35px
+					a
+						display block
+						line-height: 50px
+						font-weight bold
+						height 50px
+						text-decoration none
+						padding-left: 28px
+						&.nav-active, &:hover
+							background: #0077c8
+							b[class*=icon-]
+								background-image: url(../img/arrow-bottom-hover.png)
+							
+							span
+								color white
+						span
+							color: #0077c8
+							font-size 14px
+							vertical-align middle
+						b[class*=icon-]
+							float: right
+							display block
+							margin-right: 20px
+							background-position: center
+							height: 100%
+								
+
+	.backdrop-nav
+		display none
+	.backdrop-nav.nav__opened
+		content ''
+		display block
+		position absolute
+		left: 0
+		top: 0;
+		z-index 91
+		background: rgba(0,0,0,.5)
+		width 100%
+		height 100%
+		
+		// transform: translate3d( $NAVWIDTH, 0px, 0px);
+		// -webkit-transform: translate3d( $NAVWIDTH, 0px, 0px);

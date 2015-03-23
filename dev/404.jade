@@ -1,0 +1,20 @@
+//- подключаем шаблон
+extends ./layouts/layout.jade
+
+//- Тайтл
+block title
+	title Результаты поиска
+
+
+//- Описывам контен
+block content
+	.e404
+		table
+			tr
+				td
+					.e 404
+					.white-block.center
+						.relative
+							h1.bigger Страница не найдена
+							p Простите, но у нас возникли проблемы с поиском страницы
+							a(href="#").uppercase.blue Вернуться на главную
